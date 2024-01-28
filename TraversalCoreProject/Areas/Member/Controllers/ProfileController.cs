@@ -39,7 +39,7 @@ namespace TraversalCoreProject.Areas.Member.Controllers
 				var resource = Directory.GetCurrentDirectory();
 				var extension = Path.GetExtension(p.Image.FileName);
 				var imagename = Guid.NewGuid() + extension;
-				var savelocation = resource + "/wwwroot/UserImages" + imagename;
+				var savelocation = resource + "/wwwroot/UserImage" + imagename;
 				var stream = new FileStream(savelocation, FileMode.Create);
 				await p.Image.CopyToAsync(stream);
 				user.ImageUrl = imagename;
