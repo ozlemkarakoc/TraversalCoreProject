@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TraversalCoreProje.CQRS.Queries.DestinationQueries;
 using TraversalCoreProject.CQRS.Queries.DestinationQueries;
 using TraversalCoreProject.CQRS.Result.DestinationResults;
 
@@ -17,7 +18,7 @@ namespace TraversalCoreProject.CQRS.Handlers.DestinationHandlers
             _context = context;
         }
 
-        public List<GetAllDestinationQueryResult> Handle(GetDestinationByIDQuery getDestinationByIDQuery)
+        public List<GetAllDestinationQueryResult> Handle()
         {
             var values = _context.Destinations.Select(x => new GetAllDestinationQueryResult
             {
@@ -28,11 +29,6 @@ namespace TraversalCoreProject.CQRS.Handlers.DestinationHandlers
                 price = x.Price
             }).AsNoTracking().ToList();
             return values;
-        }
-
-        internal object Handle()
-        {
-            throw new NotImplementedException();
         }
     }
 }

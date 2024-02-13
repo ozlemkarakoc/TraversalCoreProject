@@ -2,6 +2,7 @@ using BusinessLayer.Container;
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,9 +29,15 @@ namespace TraversalCoreProject
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddScoped<GetAllDestinationQueryHandler>();
+            services.AddScoped<GetAllDestinationQueryHandler>();
+            services.AddScoped<GetDestinationByIDQueryHandler>();
+            services.AddScoped<CreateDestinationCommandHandler>();
+            services.AddScoped<RemoveDestinationCommandHandler>();
+            services.AddScoped<UpdateDestinationCommandHandler>();
 
-			services.AddLogging(x =>
+			services.AddMediatR(typeof(Startup));
+
+            services.AddLogging(x =>
 			{
 				x.ClearProviders();
 				x.SetMinimumLevel(LogLevel.Debug);

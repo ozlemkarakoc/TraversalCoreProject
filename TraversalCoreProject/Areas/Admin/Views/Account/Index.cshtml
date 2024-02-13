@@ -1,0 +1,59 @@
+﻿@using TraversalCoreProject.Areas.Admin.Models;
+@model AccountViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@* <h3>Unit Of Work Personel Prim Transferi</h3>
+
+<form method="post">
+    <label>Gönderen</label>
+    <input type="text" asp-for="SenderID" class="form-control" />
+    <br />
+    <label>Alıcı</label>
+    <input type="text" asp-for="ReceiverID" class="form-control" />
+    <br />
+    <label>Miktar</label>
+    <input type="text" asp-for="Amount" class="form-control" />
+    <br />
+    <button class=" btn btn-outline-warning">Hesaba Gönder</button>
+</form> *@
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<br />
+<h3>Unit of Work Personel Prim Transferi</h3>
+<br />
+
+<form method="post">
+    <label>Gönderen</label>
+    @Html.DropDownListFor(x => x.SenderID, (List<SelectListItem>)ViewBag.id, "Göndereni Seçin", new { @class = "form-control" })
+    <br />
+    <label>Alıcı</label>
+    @Html.DropDownListFor(x => x.ReceiverID, (List<SelectListItem>)ViewBag.id, "Alıcıyı Seçin", new { @class = "form-control" })
+    <br />
+    <label>Tutar ₺</label>
+    <input type="text" asp-for="Amount" class="form-control" />
+    <br />
+    <button id="btnsend" class="btn btn-outline-success">Hesaba Aktar</button>
+</form>
+
+<script>
+    $('#btnsend').click(function () {
+        showSweetAlertAndRedirect();
+    });
+
+    function showSweetAlertAndRedirect() {
+        Swal.fire({
+            title: 'Tebrikler para transferi başarılı bir şekilde gerçekleşti ',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonText: 'Tamam'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/Admin/Account/Index";
+            }
+        });
+    }
+</script>
