@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
-{
+{   
+    // IAboutService sınıfından implemente edilir.
     public class AboutManager : IAboutService
     {
         IAboutDal _aboutDal;
