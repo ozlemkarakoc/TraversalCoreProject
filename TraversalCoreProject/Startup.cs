@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.IO;
+using TraversalCoreProject.Controllers;
 using TraversalCoreProject.CQRS.Handlers.DestinationHandlers;
 using TraversalCoreProject.Models;
 
@@ -57,6 +58,7 @@ namespace TraversalCoreProject
 
             services.AddControllersWithViews().AddFluentValidation();
 
+
 			services.AddMvc(config =>
 			{
 				var policy = new AuthorizationPolicyBuilder()
@@ -65,7 +67,17 @@ namespace TraversalCoreProject
 				config.Filters.Add(new AuthorizeFilter(policy));
 			});
 
-			services.AddMvc();
+			services.AddLocalization(opt =>
+			{
+				opt.ResourcesPath = "Resources";
+			});
+
+			services.AddMvc().AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization();
+
+			services.ConfigureApplicationCookie(options =>
+			{
+				options.LogoutPath = "/Login/SignIn/";
+			});
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -92,6 +104,10 @@ namespace TraversalCoreProject
 			app.UseRouting();
 
 			app.UseAuthorization();
+
+			var supportedCultures = new[] { "en", "fr", "es", "gr", "tr", "de" };
+			var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[5]).AddSupportedCultures(supportedCultures).AddSupportedUICultures(supportedCultures);
+			app.UseRequestLocalization(localizationOptions);
 
 			app.UseEndpoints(endpoints =>
 			{
