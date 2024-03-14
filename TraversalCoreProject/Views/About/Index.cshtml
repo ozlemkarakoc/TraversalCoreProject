@@ -1,0 +1,252 @@
+﻿@using EntityLayer.Concrete
+@model List<Guide>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Hakkımızda </title>
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <!-- google fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="~/Traversal-Liberty/assets/css/style-liberty.css">
+    <!-- Template CSS -->
+</head>
+
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand mr-lg-5" href="/Default/Index/">
+                        Traversal
+                    </a>
+                </h1>
+                <!-- if logo is image enable this
+                <a class="navbar-brand" href="#index.html">
+                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Default/Index/">Ana Sayfa <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/About/Index/">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Destination/Index/">Rotalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Guide/Index/">Rehberlerimiz</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contact/Index/">İletişim</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="d-lg-block d-none">
+                    <a href="contact.html" class="btn btn-style btn-secondary">Rezervasyon Yap</a>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!-- about breadcrumb -->
+    <section class="w3l-about-breadcrumb text-left">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container py-2">
+                <h2 class="title">Hakkımızda</h2>
+                <ul class="breadcrumbs-custom-path mt-2">
+                    <li><a href="#url">Anasayfa</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Hakkımızda </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //about breadcrumb -->
+    <!-- /about-6-->
+    <section class="w3l-cta4 py-5">
+        <div class="container py-lg-5">
+            <div class="ab-section text-center">
+                <h6 class="sub-title">Biz kimiz?</h6>
+                <h3 class="hny-title">Dünyanın Her Yerinde Anılar Yaratmak İçin Seyahat Edin.</h3>
+                <p class="py-3 mb-3">
+                    Seyahat etmekten hoşlanır mısınız sorusuna vereceğim cevap tabiki de evet. Yeni yerler görmek, yeni insanlar tanımak, farklı lezzetleri tatmak ve şehrin, gezdiğimiz yerin havasını tüm bedenimizde hissetmektir. Tarifsiz bir mutluluk verir. Keşfetmeye Hazır Mısın?
+                </p>
+                <a href="/Destination/Index/" class="btn btn-style btn-primary">Rotaları Gör</a>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-9 mx-auto">
+                    <img src="~/Traversal-Liberty/assets/images/banner3.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //about-6-->
+    <!-- /content-6-->
+    <section class="w3l-content-6 py-5">
+        <div class="container py-lg-5">
+            <div class="row">
+                <div class="col-lg-6 content-6-left pr-lg-5">
+                    <h6 class="sub-title">Neden Bizimle Seyahat Etmelisin?</h6>
+                    <h3 class="hny-title">Hayat Konfor Alanınızın Ucunda Başlar.</h3>
+                </div>
+                <div class="col-lg-6 content-6-right mt-lg-0 mt-4">
+                    <p class="mb-3">
+                        Deneyimli rehberler eşliğinde seyahat ettiğiniz şehirleri sadece görmekle kalmayıp tarihi ve kültürü hakkında bilgi sahibi olacakasınız.
+                    </p>
+                    <p class="mb-3">
+                        Traversal olarak sağlamış olduğumuz konforlu yolculuk imkanları ile sizi yeni serüvenlere mutlu ve rahat bir şekilde ulaştırmak önceliğimizdir.
+                        Bizi tercih ettiğinize asla pişman olmayacaksınız.
+                    </p>
+                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w3l-statshny py-5" id="stats">
+        <div class="container py-lg-5 py-md-4">
+            <div class="w3-stats-inner-info">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-6 stats_info counter_grid text-center">
+                        <span class="fa fa-smile-o"></span>
+                        <p class="counter">285</p>
+                        <h4>Mutlu Müşteriler</h4>
+                    </div>
+                    <div class="col-lg-4 col-6 stats_info counter_grid1 text-center">
+                        <span class="fa fa-users"></span>
+                        <p class="counter">730</p>
+                        <h4>Bağlantılar</h4>
+                    </div>
+                    <div class="col-lg-4 col-6 stats_info counter_grid mt-lg-0 mt-5 text-center">
+                        <span class="fa fa-database"></span>
+                        <p class="counter">7</p>
+                        <h4>Şubeler</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- //stats -->
+    <!-- team -->
+    <section class="w3l-team" id="team">
+        <div class="team-block py-5">
+            <div class="container py-lg-5">
+                <div class="title-content text-center mb-lg-3 mb-4">
+                    <h6 class="sub-title">Ekibimiz</h6>
+                    <h3 class="hny-title">Rehberlerimizle Tanışın</h3>
+                </div>
+                <div class="row">
+                    @foreach(var item in Model)
+                    {
+                    <div class="col-lg-3 col-6 mt-lg-5 mt-4">
+                        <div class="box16">
+                            <a href="#url"><img src="@item.Image" alt="" class="img-fluid" /></a>
+                            <div class="box-content">
+                                <h3 class="title"><a href="#url">@item.Name</a></h3>
+                                <span class="post">@item.Description</span>
+                                <ul class="social">
+                                    <li>
+                                        <a href="#" class="facebook">
+                                            <span class="fa fa-facebook-f"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="twitter">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //team -->
+    <!--/w3l-footer-29-main-->
+
+    <!-- Template JavaScript -->
+    <script src="~/Traversal-Liberty/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Traversal-Liberty/assets/js/theme-change.js"></script>
+    <!-- stats number counter-->
+    <script src="~/Traversal-Liberty/assets/js/jquery.waypoints.min.js"></script>
+    <script src="~/Traversal-Liberty/assets/js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- //stats number counter -->
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+
+    <script src="~/Traversal-Liberty/assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
