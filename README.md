@@ -1,16 +1,16 @@
-**_ M&Y Eğitim Akademi Traversal Project_**
+#** M&Y Eğitim Akademi Traversal Project**
 ---
 **Traversal Project seyahat etmeyi ve farklı ülkeler şehirler keşfetmeyi seven kişiler için oluşturulmuş bir web uygulamasıdır.
 Uygun rotaları belirleme ve deneyimli rehberler eşliğinde keyifli vakit geçirmeyi amaçlamıştır. Sağladığı imkanlar ile gerek yurtiçi gerekse yurtdışı doyasıya gezme ve farklı kültürleri deneyimleme şansı vermektedir.**
 
 
-# 1. Traversal Project Login Pages
+## 1. Traversal Project Login Pages
 
 ![1](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/e0c17bc7-27dc-488e-8f8c-e642dc61bfe5)
 ![2](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/477dcc9e-d91c-4e14-bc96-4cfdfbe25575)
 ![3](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/3c1963d0-4097-4abe-9b41-0f0734af11e5)
 
-# 2. Traversal Project UI
+## 2. Traversal Project UI
 
 ![201](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/f35d3cc2-6bae-4583-8bb3-5682e8759d23)
 ![202](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/a73927c8-ee07-40f0-80d0-2f8ec22ce7f8)
@@ -30,7 +30,7 @@ Uygun rotaları belirleme ve deneyimli rehberler eşliğinde keyifli vakit geçi
 ![216](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/1fb3c4d4-58cb-4a81-87c3-a53654172df1)
 ![217](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/d5cc3e79-1e95-44c4-9437-2912a525c972)
 
-# 3. Traversal Project Member Pages
+## 3. Traversal Project Member Pages
 
 ![4](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/61513eb5-c92e-4753-8d1a-16b2ee2dd45e)
 ![5](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/f16ad1ec-2704-4067-8a50-5b2557473579)
@@ -42,7 +42,7 @@ Uygun rotaları belirleme ve deneyimli rehberler eşliğinde keyifli vakit geçi
 ![11](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/d7a227d2-c95c-481b-b7be-6ca031a3d70d)
 ![12](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/15cc1a61-2436-47c7-bca4-212856cd75a5)
 
-# 4. Traversal Project Admin Pages
+## 4. Traversal Project Admin Pages
 
 ![101](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/d55c4c69-ed88-42f5-b26b-e00f9d8c9df6)
 ![102](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/427b55e7-f78c-4c2b-b548-8843619cb426)
@@ -55,6 +55,6 @@ Uygun rotaları belirleme ve deneyimli rehberler eşliğinde keyifli vakit geçi
 ![109](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/29227216-1fa1-4e7a-9a38-43dadc03e67b)
 ![110](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/791d8439-e972-419d-b661-10cfed63dea1)
 
-# 5. Traversal Project Database Diagram
+## 5. Traversal Project Database Diagram
 
 ![1001](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/5712cbaf-81e8-434b-8f0e-f615ed2b1da3)
