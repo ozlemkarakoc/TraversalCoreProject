@@ -1,12 +1,29 @@
 # M&Y Eğitim Akademi Traversal Project
 ---
-** Traversal Project seyahat etmeyi ve farklı ülkeler şehirler keşfetmeyi seven kişiler için oluşturulmuş bir web uygulamasıdır.
-Uygun rotaları belirleme ve deneyimli rehberler eşliğinde keyifli vakit geçirmeyi amaçlamıştır. Sağladığı imkanlar ile gerek yurtiçi gerekse yurtdışı doyasıya gezme ve farklı kültürleri deneyimleme şansı vermektedir. **
+Traversal Project seyahat etmeyi ve farklı ülkeler şehirler keşfetmeyi seven kişiler için oluşturulmuş bir web uygulamasıdır.
+Uygun rotaları belirleme ve deneyimli rehberler eşliğinde keyifli vakit geçirmeyi amaçlamıştır. Sağladığı imkanlar ile gerek yurtiçi gerekse yurtdışı doyasıya gezme ve farklı kültürleri deneyimleme şansı vermektedir.
 ---
 
 ## Kullanılan Teknolojiler
 * C#
 * Microsoft SQL Server
+* ASP.NET Core 5.0
+* Code First yaklaşımı
+* Entity Framework
+* N-Tier Architecture
+* Fluent Validation
+* Repository Design Pattern
+* Ajax
+* DTO (Data Transfer Object)
+* ASP.NET Core Identity
+* HTML, Bootstrap, CSS ve JavaScript
+* SignalR
+* Mediator Design Pattern
+* Unit of Work Design Pattern
+* CQRS Design Pattern
+* Rapid API
+* API
+* Mailkit   
 
 
 ## 1. Traversal Project Login Pages
