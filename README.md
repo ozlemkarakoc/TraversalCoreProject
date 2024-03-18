@@ -1,4 +1,6 @@
-
+**_ M&Y Eğitim Akademi Traversal Project_**
+** Traversal Project seyahat etmeyi ve farklı ülkeler şehirler keşfetmeyi seven kişiler için oluşturulmuş bir web uygulamasıdır.
+Uygun rotaları belirleme ve deneyimli rehberler eşliğinde keyifli vakit geçirmeyi amaçlamıştır. Sağladığı imkanlar ile gerek yurtiçi gerekse yurtdışı doyasıya gezme ve farklı kültürleri deneyimleme şansı vermektedir.**
 
 
 # 1. Traversal Project Login Pages
