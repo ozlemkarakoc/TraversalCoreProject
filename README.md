@@ -4,6 +4,11 @@
 Uygun rotaları belirleme ve deneyimli rehberler eşliğinde keyifli vakit geçirmeyi amaçlamıştır. Sağladığı imkanlar ile gerek yurtiçi gerekse yurtdışı doyasıya gezme ve farklı kültürleri deneyimleme şansı vermektedir.**
 ---
 
+##Kullanılan Teknolojiler
+*C#
+*Microsoft SQL Server
+
+
 ## 1. Traversal Project Login Pages
 
 ![1](https://github.com/ozlemkarakoc/TraversalCoreProject/assets/59397710/e0c17bc7-27dc-488e-8f8c-e642dc61bfe5)
